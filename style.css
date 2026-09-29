@@ -4399,3 +4399,62 @@ footer p {
     scroll-margin-top: 25px;
 }
 
+/* =========================
+   MOBILE ONLY FIX
+   ========================= */
+
+@media (max-width: 600px) {
+
+    /* Mobile navbar */
+    .navbar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        box-sizing: border-box;
+
+        padding: 8px 5%;
+
+        flex-wrap: wrap;
+        gap: 8px;
+
+        z-index: 1000;
+    }
+
+    /* Logo */
+    .logo img {
+        width: 85px;
+        height: 65px;
+    }
+
+    /* Join button */
+    .nav-btn {
+        padding: 9px 14px;
+        font-size: 11px;
+    }
+
+    /* Navigation links */
+    .navbar nav {
+        order: 3;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 8px 14px;
+        padding: 4px 0 5px;
+    }
+
+    .navbar nav a {
+        font-size: 11px;
+    }
+
+    /* Anchor scrolling on phone */
+    html {
+        scroll-padding-top: 135px;
+    }
+
+}

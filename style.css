@@ -4496,15 +4496,20 @@ footer p {
    FINAL MOBILE SECTION FIX
 ========================= */
 
+/* =========================
+   CONTACT MOBILE FINAL FIX
+========================= */
+
 @media (max-width: 700px) {
 
-    #home,
-    #about,
-    #programs,
-    #membership,
-    #gallery,
     #contact {
-        scroll-margin-top: 135px !important;
+        scroll-margin-top: 0 !important;
+        padding-top: 25px !important;
+    }
+
+    #contact .section-heading {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 
 }

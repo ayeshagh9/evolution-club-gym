@@ -684,29 +684,29 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         e.preventDefault();
 
         const navbar = document.querySelector('.navbar');
-        const navbarHeight = navbar.getBoundingClientRect().height;
 
-        let scrollTarget = target;
+        /*
+         * Safari/iOS sometimes calculates the anchor position
+         * before images finish changing the page height.
+         * Wait briefly, then calculate the position again.
+         */
 
-        /* Contact: scroll directly to GET IN TOUCH heading */
-        if (target.id === 'contact') {
-            const heading = target.querySelector('.section-heading');
+        setTimeout(function () {
 
-            if (heading) {
-                scrollTarget = heading;
-            }
-        }
+            const navbarHeight = navbar.getBoundingClientRect().height;
 
-        const targetPosition =
-            scrollTarget.getBoundingClientRect().top +
-            window.pageYOffset -
-            navbarHeight -
-            25;
+            const targetPosition =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                navbarHeight -
+                25;
 
-        window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-        });
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+
+        }, 300);
 
     });
 

@@ -4529,3 +4529,141 @@ footer p {
     color: #000000 !important;
     transform: none;
 }
+/* =========================================
+   EVOLUTION GYM - PROFESSIONAL GALLERY
+========================================= */
+
+#gallery {
+    padding: 70px 6% 90px !important;
+    background: #0b0b0b;
+}
+
+/* Gallery heading */
+#gallery .section-heading {
+    margin-bottom: 45px !important;
+}
+
+/* Gallery grid */
+#gallery .gallery-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+
+    align-items: stretch;
+}
+
+/* Individual photo */
+#gallery .gallery-item {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 330px;
+
+    background: #151515;
+    border: 1px solid #292929;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+/* Photos */
+#gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+/* Hover */
+#gallery .gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+/* Professional dark overlay */
+#gallery .gallery-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 22px;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.75),
+        transparent 55%
+    );
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay on hover */
+#gallery .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+#gallery .gallery-overlay span {
+    color: #ffd400;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   MOBILE GALLERY
+========================================= */
+
+@media (max-width: 700px) {
+
+    #gallery {
+        padding: 55px 5% 70px !important;
+    }
+
+    #gallery .section-heading {
+        margin-bottom: 30px !important;
+    }
+
+    #gallery .section-heading h2 {
+        font-size: 36px !important;
+    }
+
+    #gallery .gallery-grid {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+        width: 100%;
+    }
+
+    #gallery .gallery-item {
+        width: 100%;
+        height: 250px;
+
+        border-radius: 10px;
+    }
+
+    /* Disable hover overlay on touch devices */
+    #gallery .gallery-overlay {
+        opacity: 1;
+        padding: 15px;
+    }
+
+    #gallery .gallery-overlay span {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+}

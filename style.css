@@ -4493,23 +4493,22 @@ footer p {
 }
 
 /* =========================
-   FINAL MOBILE SECTION FIX
-========================= */
-
-/* =========================
-   CONTACT MOBILE FINAL FIX
+   CONTACT - FINAL MOBILE POSITION
 ========================= */
 
 @media (max-width: 700px) {
 
     #contact {
-        scroll-margin-top: 0 !important;
-        padding-top: 25px !important;
+        padding-top: 70px !important;
+        scroll-margin-top: 135px !important;
+        position: relative;
+        z-index: 1;
     }
 
     #contact .section-heading {
+        position: relative;
+        z-index: 2;
         margin-top: 0 !important;
-        padding-top: 0 !important;
     }
 
 }

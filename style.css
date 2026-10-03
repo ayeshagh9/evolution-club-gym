@@ -4458,3 +4458,53 @@ footer p {
     }
 
 }
+
+
+/* =========================
+   MOBILE NAVBAR FINAL FIX
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        min-height: 80px;
+        padding: 10px 5%;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 9px;
+        padding: 8px 0 5px;
+    }
+
+    .navbar nav a {
+        font-size: 12px;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+}
+
+/* =========================
+   FINAL MOBILE SECTION FIX
+========================= */
+
+@media (max-width: 700px) {
+
+    #home,
+    #about,
+    #programs,
+    #membership,
+    #gallery,
+    #contact {
+        scroll-margin-top: 135px !important;
+    }
+
+}

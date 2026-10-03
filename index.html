@@ -673,7 +673,7 @@
 
 
 <script>
-document.querySelectorAll('.navbar a[href^="#"]').forEach(link => {
+document.querySelectorAll('a[href^="#"]').forEach(link => {
 
     link.addEventListener('click', function (e) {
 
@@ -686,11 +686,22 @@ document.querySelectorAll('.navbar a[href^="#"]').forEach(link => {
         const navbar = document.querySelector('.navbar');
         const navbarHeight = navbar.getBoundingClientRect().height;
 
+        let scrollTarget = target;
+
+        /* Contact: scroll directly to GET IN TOUCH heading */
+        if (target.id === 'contact') {
+            const heading = target.querySelector('.section-heading');
+
+            if (heading) {
+                scrollTarget = heading;
+            }
+        }
+
         const targetPosition =
-            target.getBoundingClientRect().top +
+            scrollTarget.getBoundingClientRect().top +
             window.pageYOffset -
             navbarHeight -
-            15;
+            25;
 
         window.scrollTo({
             top: targetPosition,

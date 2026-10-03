@@ -4726,3 +4726,420 @@ footer p {
         opacity: 1 !important;
     }
 }
+
+
+/* =========================================================
+   EVOLUTION CLUB GYM — MEMBERSHIP APPLICATION
+========================================================= */
+
+.application-page {
+    min-height: 100vh;
+    background: #0a0a0a;
+    color: #ffffff;
+    padding: 50px 20px 70px;
+    box-sizing: border-box;
+}
+
+.application-container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* ---------- HEADER ---------- */
+
+.application-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.back-home {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+}
+
+.back-home:hover {
+    color: #f5c400;
+}
+
+.application-tag {
+    color: #f5c400;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 0 12px;
+}
+
+.application-header h1 {
+    margin: 0;
+    font-size: clamp(32px, 5vw, 55px);
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+.application-header h1 span {
+    color: #f5c400;
+}
+
+.application-subtitle {
+    margin: 15px 0 10px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.application-description {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ---------- FORM ---------- */
+
+.gym-application-form {
+    width: 100%;
+}
+
+.form-section {
+    background: #111111;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 22px;
+    box-sizing: border-box;
+}
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    padding-bottom: 18px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #292929;
+}
+
+.form-section-title span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #f5c400;
+    color: #000000;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    margin-bottom: 9px;
+    color: #dddddd;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-group label span {
+    color: #f5c400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+    border-radius: 7px;
+    background: #080808;
+    color: #ffffff;
+    padding: 13px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666666;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f5c400;
+    box-shadow: 0 0 0 2px rgba(245, 196, 0, 0.08);
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 95px;
+}
+
+
+/* ---------- DECLARATION ---------- */
+
+.application-declaration {
+    background: #111111;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    color: #aaaaaa;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.checkbox-label input {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: #f5c400;
+    cursor: pointer;
+}
+
+
+/* ---------- SUBMIT ---------- */
+
+.application-submit {
+    text-align: center;
+}
+
+.application-submit button {
+    width: 100%;
+    max-width: 360px;
+    border: none;
+    border-radius: 6px;
+    background: #f5c400;
+    color: #000000;
+    padding: 16px 25px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.application-submit button:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+.application-submit p {
+    margin: 14px 0 0;
+    color: #777777;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 700px) {
+
+    .application-page {
+        padding: 30px 14px 50px;
+    }
+
+    .application-header {
+        margin-bottom: 30px;
+    }
+
+    .back-home {
+        margin-bottom: 22px;
+    }
+
+    .application-header h1 {
+        font-size: 34px;
+    }
+
+    .application-subtitle {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+
+    .application-description {
+        font-size: 13px;
+    }
+
+    .form-section {
+        padding: 20px 16px;
+        border-radius: 9px;
+    }
+
+    .form-section-title {
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .form-section-title span {
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .application-submit button {
+        max-width: 100%;
+    }
+
+}
+
+/* =========================================================
+   APPLICATION SUCCESS MESSAGE
+========================================================= */
+
+.application-success {
+    display: none;
+    text-align: center;
+    background: #111111;
+    border: 1px solid #f5c400;
+    border-radius: 12px;
+    padding: 45px 25px;
+    margin-top: 25px;
+}
+
+.application-success.show {
+    display: block;
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f5c400;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.application-success h2 {
+    margin: 0 0 15px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.application-success h2 span {
+    color: #f5c400;
+}
+
+.application-success p {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 8px auto;
+    max-width: 600px;
+}
+
+.success-whatsapp {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 22px;
+    background: #f5c400;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: 0.25s ease;
+}
+
+.success-whatsapp:hover {
+    background: #ffffff;
+}
+
+.success-home {
+    display: block;
+    margin-top: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.success-home:hover {
+    color: #f5c400;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media screen and (max-width: 700px) {
+
+    .application-success {
+        padding: 35px 18px;
+    }
+
+    .application-success h2 {
+        font-size: 23px;
+    }
+
+    .success-whatsapp {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}

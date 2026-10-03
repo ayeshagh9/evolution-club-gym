@@ -4512,3 +4512,20 @@ footer p {
     }
 
 }
+
+/* HAVE QUESTIONS - WHATSAPP BUTTON */
+
+.whatsapp-box .whatsapp-btn {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: none;
+    box-shadow: none;
+}
+
+.whatsapp-box .whatsapp-btn:hover,
+.whatsapp-box .whatsapp-btn:active,
+.whatsapp-box .whatsapp-btn:focus {
+    background: #ffffff !important;
+    color: #000000 !important;
+    transform: none;
+}

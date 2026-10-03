@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Membership Application | Evolution Club Gym</title>
+
+    <meta name="description"
+        content="Apply for membership at Evolution Club Gym, Saheb Nagar, Gayatri Nagar. Choose your membership plan and submit your application.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         APPLICATION PAGE
+    =============================== -->
+
+    <section class="application-page">
+
+        <div class="application-container">
+
+            <!-- Header -->
+            <div class="application-header">
+
+                <a href="index.html" class="back-home">
+                    ← BACK TO HOME
+                </a>
+
+                <p class="application-tag">EVOLUTION CLUB GYM</p>
+
+                <h1>
+                    MEMBERSHIP <span>APPLICATION</span>
+                </h1>
+
+                <p class="application-subtitle">
+                    BUILD YOUR BODY. BUILD YOUR DISCIPLINE.
+                </p>
+
+                <p class="application-description">
+                    Fill in the details below to apply for your gym membership.
+                    Our team will contact you after reviewing your application.
+                </p>
+
+            </div>
+
+
+            <!-- Application Form -->
+            <form class="gym-application-form">
+
+                <!-- PERSONAL INFORMATION -->
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>01</span>
+                        PERSONAL INFORMATION
+                    </div>
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+                            <label for="full-name">
+                                Full Name <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="full-name"
+                                name="full_name"
+                                placeholder="Enter your full name"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="age">
+                                Age <span>*</span>
+                            </label>
+
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                min="10"
+                                max="100"
+                                placeholder="Enter your age"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gender">
+                                Gender <span>*</span>
+                            </label>
+
+                            <select id="gender" name="gender" required>
+
+                                <option value="" disabled selected>
+                                    Select gender
+                                </option>
+
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Mobile Number <span>*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter mobile number"
+                                maxlength="10"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="whatsapp">
+                                WhatsApp Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="whatsapp"
+                                name="whatsapp"
+                                placeholder="Enter WhatsApp number"
+                                maxlength="10">
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="address">
+                                Address <span>*</span>
+                            </label>
+
+                            <textarea
+                                id="address"
+                                name="address"
+                                rows="3"
+                                placeholder="Enter your address"
+                                required></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MEMBERSHIP DETAILS -->
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>02</span>
+                        MEMBERSHIP DETAILS
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="membership">
+                                Membership Plan <span>*</span>
+                            </label>
+
+                            <select
+                                id="membership"
+                                name="membership"
+                                required>
+
+                                <option value="" disabled selected>
+                                    Select membership
+                                </option>
+
+                                <option value="Cardio + Strength">
+                                    Cardio + Strength
+                                </option>
+
+                                <option value="Strength Only">
+                                    Strength Only
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="duration">
+                                Membership Duration <span>*</span>
+                            </label>
+
+                            <select
+                                id="duration"
+                                name="duration"
+                                required>
+
+                                <option value="" disabled selected>
+                                    Select duration
+                                </option>
+
+                                <option value="1 Month">
+                                    1 Month
+                                </option>
+
+                                <option value="3 Months">
+                                    3 Months
+                                </option>
+
+                                <option value="6 Months">
+                                    6 Months
+                                </option>
+
+                                <option value="12 Months">
+                                    12 Months
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="goal">
+                                Fitness Goal <span>*</span>
+                            </label>
+
+                            <select
+                                id="goal"
+                                name="fitness_goal"
+                                required>
+
+                                <option value="" disabled selected>
+                                    Select your fitness goal
+                                </option>
+
+                                <option value="Weight Loss">
+                                    Weight Loss
+                                </option>
+
+                                <option value="Muscle Building">
+                                    Muscle Building
+                                </option>
+
+                                <option value="Strength Training">
+                                    Strength Training
+                                </option>
+
+                                <option value="General Fitness">
+                                    General Fitness
+                                </option>
+
+                                <option value="Personal Training">
+                                    Personal Training
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="experience">
+                                Previous Gym / Fitness Experience
+                            </label>
+
+                            <textarea
+                                id="experience"
+                                name="experience"
+                                rows="3"
+                                placeholder="Tell us briefly about your previous fitness experience"></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMERGENCY CONTACT -->
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>03</span>
+                        EMERGENCY CONTACT
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="emergency-name">
+                                Emergency Contact Name <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="emergency-name"
+                                name="emergency_name"
+                                placeholder="Enter name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="emergency-phone">
+                                Emergency Contact Number <span>*</span>
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="emergency-phone"
+                                name="emergency_phone"
+                                placeholder="Enter phone number"
+                                maxlength="10"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HEALTH INFORMATION -->
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>04</span>
+                        HEALTH INFORMATION
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="health">
+                                Medical / Fitness Information
+                            </label>
+
+                            <textarea
+                                id="health"
+                                name="health_information"
+                                rows="4"
+                                placeholder="Mention any medical condition, injury, allergy or fitness-related information that the gym should know about."></textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREFERRED TIMING -->
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>05</span>
+                        PREFERRED TRAINING TIME
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="training-time">
+                                Preferred Training Time <span>*</span>
+                            </label>
+
+                            <select
+                                id="training-time"
+                                name="training_time"
+                                required>
+
+                                <option value="" disabled selected>
+                                    Select preferred time
+                                </option>
+
+                                <option value="Morning">
+                                    Morning — 5:00 AM to 10:00 AM
+                                </option>
+
+                                <option value="Evening">
+                                    Evening — 5:00 PM to 9:00 PM
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HOW DID YOU HEAR -->
+                <div class="form-section">
+
+                    <div class="form-section-title">
+                        <span>06</span>
+                        ADDITIONAL INFORMATION
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group full-width">
+
+                            <label for="source">
+                                How did you hear about us?
+                            </label>
+
+                            <select id="source" name="source">
+
+                                <option value="" disabled selected>
+                                    Select an option
+                                </option>
+
+                                <option value="Friend / Family">
+                                    Friend / Family
+                                </option>
+
+                                <option value="Instagram">
+                                    Instagram
+                                </option>
+
+                                <option value="Google">
+                                    Google
+                                </option>
+
+                                <option value="WhatsApp">
+                                    WhatsApp
+                                </option>
+
+                                <option value="Walk-in">
+                                    Walk-in
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DECLARATION -->
+                <div class="application-declaration">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                            name="declaration"
+                            required>
+
+                        <span>
+                            I confirm that the information provided above is
+                            correct to the best of my knowledge. I understand
+                            that the gym may contact me regarding my membership
+                            application.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+                <div class="application-submit">
+
+                    <button type="submit">
+                        SUBMIT APPLICATION
+                    </button>
+
+                    <p>
+                        Evolution Club Gym · Saheb Nagar, Gayatri Nagar
+                    </p>
+
+                    <p>
+                        📞 8341901325 &nbsp; | &nbsp; 9177492386
+                    </p>
+
+                </div>
+
+            </form>
+
+            <div id="application-success" class="application-success">
+
+    <div class="success-icon">✓</div>
+
+    <h2>APPLICATION <span>SUBMITTED</span></h2>
+
+    <p>
+        Thank you for choosing Evolution Club Gym.
+    </p>
+
+    <p>
+        Your membership application has been received successfully.
+        Our team will contact you shortly.
+    </p>
+
+    <a href="https://wa.me/918341901325"
+       target="_blank"
+       class="success-whatsapp">
+        💬 CONTACT US ON WHATSAPP
+    </a>
+
+    <a href="index.html" class="success-home">
+        ← BACK TO HOME
+    </a>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         FORM MESSAGE
+    =============================== -->
+
+    <script>
+
+const applicationForm = document.querySelector(".gym-application-form");
+
+applicationForm.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const submitButton =
+        applicationForm.querySelector("button[type='submit']");
+
+    submitButton.disabled = true;
+    submitButton.textContent = "SUBMITTING...";
+
+    const formData = new URLSearchParams();
+
+    const fields = new FormData(applicationForm);
+
+    for (const [key, value] of fields.entries()) {
+        formData.append(key, value);
+    }
+
+    try {
+
+        await fetch(
+            "https://script.google.com/macros/s/AKfycbwUFD8oTMek4qyWsHvkUacJdmhYdcxEIqpCPrUTJsanesmfQnkNFX21WYnnYSxs9iAt/exec",
+            {
+                method: "POST",
+                mode: "no-cors",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: formData.toString()
+            }
+        );
+
+        applicationForm.reset();
+
+applicationForm.style.display = "none";
+
+document
+    .getElementById("application-success")
+    .classList.add("show");
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert(
+            "Something went wrong while submitting your application. " +
+            "Please try again or contact the gym directly."
+        );
+
+    } finally {
+
+        submitButton.disabled = false;
+        submitButton.textContent = "SUBMIT APPLICATION";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

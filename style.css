@@ -5143,3 +5143,10 @@ footer p {
     }
 
 }
+.application-logo {
+    display: block;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
